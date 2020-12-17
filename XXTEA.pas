@@ -10,7 +10,7 @@
 |      Roger M. Needham                                    |
 |                                                          |
 | Code Author:  Ma Bingyao <mabingyao@gmail.com>           |
-| LastModified: Mar 10, 2015                               |
+| LastModified: Dec 17, 2020                               |
 |                                                          |
 \**********************************************************/
 }
@@ -27,7 +27,7 @@ function Decrypt(const Data, Key: TBytes): TBytes;
 implementation
 
 type
-  TUint32 = LongWord;
+  TUint32 = Cardinal;
   TUint32Array = array of TUint32;
 
 const
@@ -160,4 +160,4 @@ begin
   Result := ToBytes(XXTEADecrypt(V, K), True);
 end;
 
-end.
+end.

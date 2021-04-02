@@ -13,6 +13,11 @@
 
 unit Base64;
 
+{$IFDEF FPC}
+{$mode objfpc}{$H+}
+{$ENDIF}
+
+
 interface
 
 uses SysUtils;
@@ -161,4 +166,4 @@ begin
   end;
 end;
 
-end.
+end.

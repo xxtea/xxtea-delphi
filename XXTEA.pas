@@ -17,6 +17,11 @@
 
 unit XXTEA;
 
+{$IFDEF FPC}
+{$mode objfpc}{$H+}
+{$ENDIF}
+
+
 interface
 
 uses SysUtils;
@@ -37,6 +42,7 @@ function ToUint32Array(const Data: TBytes; IncludeLength: Boolean): TUint32Array
 var
   N, I, L: TUint32;
 begin
+  Result:= nil; // <-- If not, it all doesn't work under FPC
   L := Length(Data);
   if ((L and 3) = 0) then N := L shr 2 else N := (L shr 2) + 1;
   if (IncludeLength) then begin

@@ -3,7 +3,7 @@
         <ProjectGuid>{A10DBFEB-ED8C-4A74-9856-2E6BE117F2F6}</ProjectGuid>
         <ProjectVersion>14.4</ProjectVersion>
         <FrameworkType>None</FrameworkType>
-        <MainSource>Example.dpr</MainSource>
+        <MainSource>Example.pas</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -142,7 +142,7 @@
                     <VersionInfoKeys Name="CFBundleExecutable"/>
                 </VersionInfoKeys>
                 <Source>
-                    <Source Name="MainSource">Example.dpr</Source>
+                    <Source Name="MainSource">Example.pas</Source>
                 </Source>
             </Delphi.Personality>
             <Deployment/>
